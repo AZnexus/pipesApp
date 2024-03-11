@@ -13,27 +13,69 @@
     <p-card header="titlecase">{{ fullName | titlecase }}</p-card>
   </div>
 
+  <div class="col-12 md:col-4">
+    <p-card header="Dates" subheader="fecha">{{ customDate }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Dates" subheader="fecha | date">{{ customDate | date }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Dates" subheader="fecha | date: 'short'">{{ customDate | date:'short' }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Dates" subheader="fecha | date: 'long'">{{ customDate | date:'long' }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Dates" subheader="fecha | date: 'MMMM'">{{ customDate | date:'MMMM' }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Dates" subheader="fecha | date: 'MMMM dd, yyyy'">{{ customDate | date:'MMMM dd, yyyy' }}</p-card>
+  </div>
+
   <div class="col-12 md:col-6">
+    <p-card header="Dates" subheader="fecha | date:'long':'GMT-6'">{{ customDate | date:'long':'GMT-6' }}</p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Dates" subheader="fecha | date:'long':'GMT-4'">{{ customDate | date:'long':'GMT-4' }}</p-card>
+  </div>
+
+  <div class="col-12 md:col-3">
+    <p-card header="Dates" subheader="fecha | date:'long':'':'es'">{{ customDate | date:'long':'':'es' }}</p-card>
+  </div>
+  <div class="col-12 md:col-3">
+    <p-card header="Dates" subheader="fecha | date:'long':'':'fr'">{{ customDate | date:'long':'':'fr' }}</p-card>
+  </div>
+  <div class="col-12 md:col-3">
+    <p-card header="Dates" subheader="fecha | date:'long':'':'en'">{{ customDate | date:'long':'':'en' }}</p-card>
+  </div>
+  <div class="col-12 md:col-3">
+    <p-card header="Dates" subheader="fecha | date:'long':'':'ca'">{{ customDate | date:'long':'':'ca' }}</p-card>
+  </div>
+
+
+
+
+  <!-- <div class="col-12 md:col-6">
     <p-card header="Formula">
       <ol>
-        <li>fecha</li>
-        <li>fecha | date</li>
-        <li>fecha | date: 'short'</li>
-        <li>fecha | date: 'long'</li>
-        <li>fecha | date: 'MMMM'</li>
-        <li>fecha | date: 'MMMM dd, yyyy'</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ol>
       <hr>
       <ol>
-        <li>fecha | date:'long':'GMT-6'</li>
-        <li>fecha | date:'long':'GMT-4'</li>
+        <li></li>
+        <li></li>
       </ol>
       <hr>
       <ol>
-        <li>fecha | date:'long':'':'es' </li>
-        <li>fecha | date:'long':'':'fr' </li>
-        <li>fecha | date:'long':'':'en' </li>
-        <li>fecha | date:'long':'':'ca' </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
       </ol>
     </p-card>
   </div>
@@ -41,25 +83,25 @@
   <div class="col-12 md:col-6">
     <p-card header="Dates">
       <ol>
-        <li>{{ customDate }}</li>
-        <li>{{ customDate | date }}</li>
-        <li>{{ customDate | date:'short' }}</li>
-        <li>{{ customDate | date:'long' }}</li>
-        <li>{{ customDate | date:'MMMM' }}</li>
-        <li>{{ customDate | date:'MMMM dd, yyyy' }}</li>
+        <li></li>
+        <li>{{  }}</li>
+        <li>{{  }}</li>
+        <li>{{  }}</li>
+        <li>{{  }}</li>
+        <li>{{  }}</li>
       </ol>
       <hr>
       <ol>
-        <li>{{ customDate | date:'long':'GMT-6' }}</li>
-        <li>{{ customDate | date:'long':'GMT-4' }}</li>
+        <li>{{  }}</li>
+        <li>{{  }}</li>
       </ol>
       <hr>
       <ol>
-        <li>{{ customDate | date:'long':'':'es' }}</li>
-        <li>{{ customDate | date:'long':'':'fr' }}</li>
-        <li>{{ customDate | date:'long':'':'en' }}</li>
-        <li>{{ customDate | date:'long':'':'ca' }}</li>
+        <li>{{  }}</li>
+        <li>{{  }}</li>
+        <li>{{ customDate |  }}</li>
+        <li>{{  }}</li>
       </ol>
     </p-card>
-  </div>
+  </div> -->
 </div>

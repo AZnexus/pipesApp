@@ -1,1 +1,27 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes numéricos" class="p-1">
+  <p>Pipes incluidos en Angular - Usualmente en el Common Module</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-6">
+    <p-card header="Redondeo" subheader="2 digitos">{{ totalSells | number:'1.2-2' }}</p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Redondeo" subheader="6 digitos">{{ totalSells | number:'1.6-6' }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Currency" subheader="default">{{ totalSells | currency }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Currency" subheader="euros">{{ totalSells | currency:'EUR' }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Currency" subheader="euros con 4 digitos">{{ totalSells | currency:'EUR':'symbol-narrow':'1.4-4' }}</p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Percent" subheader="default">{{ percent | percent }}</p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Percent" subheader="con 2 decimales">{{ percent | percent: '1.2-2' }}</p-card>
+  </div>
+</div>
